@@ -13,7 +13,7 @@ Sekundär:
 
 ## Aufgabenstellung
 **Wiederholen** Sie die folgenden Arbeitsschritte so lange, bis die Ziele möglichst erreicht sind.
- 1. Betreiben Sie Refactoring! Überarbeiten Sie die Funktion `is_valid_email(email:str)` so, dass die Funktionalität erhalten bleibt, aber der Code ~~besser~~lesbarer wird.
+ 1. Betreiben Sie Refactoring! Überarbeiten Sie die Funktion `is_valid_email(email:str)` so, dass die Funktionalität erhalten bleibt, aber der Code ~~besser~~ lesbarer wird.
  2. Erweitern Sie die Testfälle in `test_email_validation.py` um eine gültige oder ungültige E-Mail-Adresse.
  3. Erweitern Sie die Funktion `is_valid_email(email:str)` so, dass der neue Testfall erfolgreich ist.
 
