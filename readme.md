@@ -21,6 +21,9 @@
 ## Nützliche Links
 - [Parametrisierte Tests mit Pytest](https://docs.pytest.org/en/7.3.x/how-to/parametrize.html#pytest-mark-parametrize)
 - [Docstrings in Python](https://www.programiz.com/python-programming/docstrings)
+
+### weniger nützliche Links
 - ["Mutter aller Email-Regex"](https://www.ex-parrot.com/pdw/Mail-RFC822-Address.html)
 - Sollten Sie sich in Ihrer Freizeit für Emails interessieren, empfehle ich dieses [Video zum Thema ](https://www.youtube.com/watch?v=mrGfahzt-4Q)
+- Ebenfalls für die Freizieit: [Password Game](https://neal.fun/password-game/)
 
