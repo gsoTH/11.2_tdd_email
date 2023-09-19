@@ -1,5 +1,5 @@
 # Email Validierung 
- Einer Ihrer Kollegen hat eine Python-Funktion `is_valid_email(email:str)` zur Überprüfung von Email-Adressen geschrieben. Die Funktion nutzt Regular Expressions (kurz RegEx), um Muster in String zu finden. RegEx sind ein mächtiges Werkzeug, können aber nur schwer gewartet werden sie werden schnell zu [code-smells "stinkendem Code"](https://luzkan.github.io/smells/complicated-regex-expression).
+ Einer Ihrer Kollegen hat eine Python-Funktion `is_valid_email(email:str)` zur Überprüfung von Email-Adressen geschrieben. Die Funktion nutzt Regular Expressions (kurz RegEx), um Muster in String zu finden. RegEx sind ein mächtiges Werkzeug, können aber nur schwer gewartet werden, wodurch schnell [code-smells ("stinkender Code")](https://luzkan.github.io/smells/complicated-regex-expression) entstehen.
 
  Immerhin hat Ihr Kollege daran gedacht, einige Testfälle zu definieren, um die Fähigkeiten seiner Funktion zu überprüfen.
 
