@@ -11,7 +11,14 @@ from input_validation import is_valid_email
 ,   ("test1@email.com")
 ])
 def test_is_valid_email__gueltige_Adressen(email):
-    assert is_valid_email(email) == True
+    # arrange
+    email_adress_to_be_tested = email
+    
+    # act
+    response = is_valid_email(email)
+    
+    # assert
+    assert response is True
 
 
 @pytest.mark.parametrize("email", [
@@ -20,4 +27,11 @@ def test_is_valid_email__gueltige_Adressen(email):
 ,   ("test@em@ail.com") # Mehrfaches @-Zeichen
 ])
 def test_is_valid_email__ungueltige_Adressen(email):
-    assert is_valid_email(email) == False
+    # arrange
+    email_adress_to_be_tested = email
+    
+    # act
+    response = is_valid_email(email)
+    
+    # assert
+    assert response is False
