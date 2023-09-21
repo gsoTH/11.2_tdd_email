@@ -7,7 +7,7 @@
 ## Ziele :dart:
 **Primär:**
 - Entwicklung nach TDD: Die Begriffe Code-Smell und Refactoring sind verinnerlicht. Für Code-Smells können mindestens drei Beispiele genannt werden, der Zusammenhang zwischen Unit-Tests und Refactoring kann erläutert werden.
-- Die Funktion soll "möglichst viele" [gültige und ungültige Email-Adressen](https://www.tumblr.com/codefool/15288874550/list-of-valid-and-invalid-email-addresses) korrekt erkennen. Dazu werden parametrisierte Testfälle genutzt.
+- Die Funktion soll "möglichst viele" [gültige und ungültige Email-Adressen](https://www.tumblr.com/codefool/15288874550/list-of-valid-and-invalid-email-addresses) korrekt erkennen. Dazu werden die parametrisierte Testfälle erweitert.
 
 **Sekundär:**
 - Es soll eine weitere Funktion `is_valid_password` entstehen, die überprüft, ob ein übergebenes Passwort den [Anforderungen des BSI](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html) entspricht.

@@ -15,7 +15,7 @@ def test_is_valid_email__gueltige_Adressen(email):
     email_adress_to_be_tested = email
     
     # act
-    response = is_valid_email(email)
+    response = is_valid_email(email_adress_to_be_tested)
     
     # assert
     assert response is True
@@ -31,7 +31,7 @@ def test_is_valid_email__ungueltige_Adressen(email):
     email_adress_to_be_tested = email
     
     # act
-    response = is_valid_email(email)
+    response = is_valid_email(email_adress_to_be_tested)
     
     # assert
     assert response is False
