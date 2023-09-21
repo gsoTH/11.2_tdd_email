@@ -1,12 +1,12 @@
 # Email Validierung 
- Einer Ihrer Kollegen hat eine Python-Funktion `is_valid_email(email:str)` zur Überprüfung von Email-Adressen geschrieben. Die Funktion nutzt Regular Expressions (kurz RegEx), um Muster in String zu finden. RegEx sind ein mächtiges Werkzeug, können aber nur schwer gewartet werden, wodurch schnell [code-smells ("stinkender Code")](https://luzkan.github.io/smells/complicated-regex-expression) entstehen.
+ Einer Ihrer Kollegen hat eine Python-Funktion `is_valid_email(email:str)` zur Überprüfung von Email-Adressen geschrieben. Die Funktion nutzt Regular Expressions (kurz RegEx), um Muster in String zu finden. RegEx sind ein mächtiges Werkzeug, können aber nur schwer nachvollzogen und gewartet werden, wodurch schnell [code-smells ("stinkender Code")](https://luzkan.github.io/smells/complicated-regex-expression) entstehen.
 
  Immerhin hat Ihr Kollege daran gedacht, einige Testfälle zu definieren, um die Fähigkeiten seiner Funktion zu überprüfen.
 
 
 ## Ziele :dart:
 **Primär:**
-- Entwicklung nach TDD: Die Begriffe Code-Smell und Refactoring sind verinnerlicht. Für Code-Smells können mindestens drei Beispiele genannt werden, der Zusammenhang zwischen Unit-Tests und Refactoring kann erläutert werden.
+- Clean Code, TDD: Die Begriffe Clean-Code bzw. Code-Smell und Refactoring sind verinnerlicht. Für (Clean-Code)[https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-clean-code/] können mindestens DRY, KISS und YAGNI erläutert werden. Der Zusammenhang zwischen Unit-Tests und Refactoring kann erläutert werden.
 - Die Funktion soll "möglichst viele" [gültige und ungültige Email-Adressen](https://www.tumblr.com/codefool/15288874550/list-of-valid-and-invalid-email-addresses) korrekt erkennen. Dazu werden die parametrisierte Testfälle erweitert.
 
 **Sekundär:**
