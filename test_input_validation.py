@@ -1,14 +1,17 @@
-import pytest
+import pytest   #benötigt für Parametrisierung
 from input_validation import is_valid_email
 
 @pytest.mark.parametrize("email", [
-    ("test@email.com")
-,   ("t.est@email.com")
-,   ("test@em.ail.com")
-,   ("test@email.co.uk")
-,   ("te-st@email.com")
-,   ("te_st@email.com")
-,   ("test1@email.com")
+    ("IAF01@gso.schule.koeln")
+,   ("IAF99@gso.schule.koeln")
+,   ("IAH01@gso.schule.koeln")
+,   ("IAH99@gso.schule.koeln")
+,   ("FI001@gso.schule.koeln")
+,   ("FI999@gso.schule.koeln")
+,   ("BFG01@gso.schule.koeln")
+,   ("BFG99@gso.schule.koeln")
+,   ("BFT01@gso.schule.koeln")
+,   ("BFT99@gso.schule.koeln")
 ])
 def test_is_valid_email__gueltige_Adressen(email):
     # arrange
@@ -22,9 +25,16 @@ def test_is_valid_email__gueltige_Adressen(email):
 
 
 @pytest.mark.parametrize("email", [
-    ("testemail.com")   # Fehlendes @-Zeichen
-,   ("test@email")      # Fehlende Top-Level-Domain
-,   ("test@em@ail.com") # Mehrfaches @-Zeichen
+    ("IAF01gso.schule.koeln")   # Fehlendes @-Zeichen
+,   ("IAF01@gso.schule")        # Falsche Top-Level-Domain
+,   ("IAF01@schule.koeln@schule.koeln")  # Mehrfache Domain
+,   ("BFT999@gso.schule.koeln") # Zu lange Klassennummer
+,   ("FI99@gso.schule.koeln")   # FI-Klassen benötigen eine Dreistellige Ziffer
+,   ("FI100@gso.schule.koeln")  # Klassennummer muss mindestens mit 1 beginnen
+,   ("IAH00@gso.schule.koeln")  # Klassennummer muss mindestens mit 1 beginnen
+,   ("IAF10@gso.schule.koeln")  # Klassennummer muss mindestens mit 1 beginnen
+,   ("BFG90@gso.schule.koeln")  # Klassennummer muss mindestens mit 1 beginnen
+,   ("ABC11@gso.schule.koeln")  # Kürzel ist sinnlos
 ])
 def test_is_valid_email__ungueltige_Adressen(email):
     # arrange
